@@ -1,0 +1,425 @@
+@font-face {
+    font-family: oswald-bold;
+    src: url("fuentes/Oswald-Bold.ttf");
+}
+
+@font-face {
+    font-family: poppins-medium;
+    src:url("fuentes/Poppins-Medium.ttf");
+}
+
+@font-face{
+    font-family: valorant;
+    src: url("fuentes/Valorant\ Font.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(16 24 35);
+}
+.fondo_hero {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.fondo_hero img {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(16, 24, 35);
+}
+
+.hero {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1;
+    gap: 3%;
+    width: 100%;
+    height: 15%;
+    overflow: visible;
+}
+
+.personajes {
+    display: flex;
+    position: relative;
+    gap: 5vw;
+    top: 10%;
+    width: 100%;
+}
+
+.girl1 {
+    margin-left: 5%;
+}
+
+.girl1 img {
+    width: 70%;
+    position: relative;
+}
+
+.girl2 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+.girl2 img {
+    width: 55%;
+    position: relative;
+    right: 23%;
+}
+
+.girl2 P {
+    font-family: oswald-bold;
+    color: white;
+    position: relative;
+    right: 17%;
+    bottom: 4%;
+    font-size: 2.85vw;
+}
+
+.girl2 h1 {
+    font-family: valorant;
+    color: white;
+    position: absolute;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 6vw;
+    bottom: 8%;
+}
+
+@media screen and (min-width:750px) {
+    .girl1 img {
+        width: 77%;
+        position: relative;
+    }
+    .girl2 img {
+        width: 53%;
+        position: relative;
+        right: 23%;
+    }
+    .girl2 P {
+        font-family: oswald-bold;
+        color: white;
+        position: relative;
+        right: 10%;
+        bottom: 4%;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width:930px) {
+    .girl1 img {
+        width: 80%;
+        position: relative;
+    }
+    .girl2 img {
+        width: 51%;
+        position: relative;
+        right: 23%;
+    }
+    .girl2 P {
+        font-family: oswald-bold;
+        color: white;
+        position: relative;
+        right: 5%;
+        bottom: 4%;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .girl1 img {
+        width: 100%;
+        position: relative;
+    }
+    .girl2 img {
+        width: 51%;
+        position: relative;
+        right: 23%;
+    }
+    .girl2 P {
+        font-family: oswald-bold;
+        color: white;
+        position: relative;
+        right: 5%;
+        bottom: 4%;
+        font-size: 3vw;
+    }
+}
+
+.titulo {
+    margin-top: 2%;
+    padding-left: 1.5%;
+}
+
+#titulo_gamer {
+    font-family: valorant;
+    color: rgb(255, 255, 255);
+    font-size: 4.5vw;
+}
+
+.secciones {
+    z-index: 3;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    color: white;
+    gap: 4vw;
+    font-family: poppins-medium;
+    font-size: 1.5vw;
+    margin-top: 3%;
+    margin-left: 3%;
+    height: 30px;
+}
+
+.secciones a {
+    text-decoration: none;
+    color: white;
+}
+
+.websyte a {
+    text-transform: capitalize;
+}
+
+.websyte span {
+    color: gray;
+}
+
+.logo {
+    padding-top: 1.5vw;
+    position: relative;
+    margin-left: 12%;
+}
+
+#logo {
+    width: 100%;
+    height: 55%;
+}
+
+.redes_sociales {
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    flex-flow:column;
+    gap: 2vw;
+    top: 18vw;
+    left: 2.5%;
+    justify-content: space-around;
+    width: 3%;
+    height: 3%;
+}
+
+#scroll {
+    overflow-y:hidden;
+}
+
+.contenedor {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 55vw;
+
+    
+}
+
+
+/* Esta e sla parte donde empieza mi bello codigo ----------------- */
+.sudtitulo {
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.t1 {
+    font-size: 3em;
+    text-align: center;
+    color: white;
+    font-family: poppins-medium;
+    margin-top: 2em;
+}
+
+
+.wrapper {
+    position: relative; 
+    width: 100%; 
+}
+img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.text {
+    font-family: poppins-medium;
+    width: 50%;
+    padding: 10px;
+    position: absolute; 
+    z-index: 2; 
+    color: white; 
+    font-size: 1em; 
+    font-weight: bold; 
+    text-align: left; 
+    padding: 0 10px; 
+    margin-top: 5em;
+}
+
+.text1 {
+    font-family: poppins-medium;
+    width: 50%;
+    padding: 10px;
+    position: absolute;
+    z-index: 2; 
+    color: white;
+    font-size: 1em; 
+    font-weight: bold; 
+    text-align: left; 
+    padding: 0 10px; 
+    margin-top: 12em;
+}
+
+.text2 {
+    font-family: poppins-medium;
+    width: 50%;
+    padding: 10px;
+    position: absolute; 
+    z-index: 2; 
+    color: white; 
+    font-size: 1em; 
+    font-weight: bold; 
+    text-align: left; 
+    padding: 0 10px; 
+    margin-top: 24em;
+}
+
+.punto {
+    width: 100%;
+    margin-top: 400px;
+}
+
+h2 {
+    font-size: 3em; 
+    text-align: center; 
+    color:  rgb(16 24 35);
+    font-family: poppins-medium;
+    margin-top: 1em;
+}
+
+p {
+    font-family: poppins-medium;
+    width: 95%;
+    padding: 10px;
+    color: white; 
+    font-size: 1em; 
+    font-weight: bold; 
+    text-align: left; 
+    padding: 0 10px;
+    margin: 5%;
+}
+
+.text3 {
+    width: 100%;
+    height: auto;
+}
+
+/*-------------------*/
+
+.pie {
+    background-color: rgb(0, 191, 243);
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 40vw;
+    position: relative;
+    top: 10vw;
+    border: solid;
+    border-bottom-width: 2.5vw;
+    border-color: rgb(16 24 35);
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.elemento1 {
+    color: white;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+.elemento1 h1 {
+    font-size: 4.5vw;
+    font-family: valorant;
+}
+
+.elemento1 h2 {
+    font-size: 1.8vw;
+    font-family: poppins-medium;
+    padding-top: 3%;
+    color: white
+}
+
+.elemento1 p {
+    position: absolute;
+    left: 5.5%;
+    bottom: 13%;
+    font-size: 1.5vw;
+    font-family: poppins-medium;
+}
+
+@media screen and (max-width: 600px) {
+    .elemento1 p {
+        bottom: 10%;
+    }
+}
+
+.pie_logo{
+    width: 40%;
+    margin-left: 28%;
+    padding-bottom: 32%;
+}
+
+.pie_phone {
+    width: 15%;
+}
+
+.elemento2 {
+    color: white;
+    font-family: poppins-medium;
+    font-size: 1vw;
+    margin-top: 13%;
+}
+
+.pie_redes_sociales {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 4vw;
+    margin-top: 10%;
+}
+
+.pie_redes_sociales img {
+    width: 100%;
+}
+
+.twitter_pie {
+    width: 16%;
+}
+
+.facebook_pie {
+    width: 16%;
+}
+
+.instagram_pie {
+    width: 16%;
+}

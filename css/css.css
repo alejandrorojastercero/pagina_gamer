@@ -1,0 +1,443 @@
+@font-face {
+    font-family: oswald-bold;
+    src: url("fuentes/Oswald-Bold.ttf");
+}
+
+@font-face {
+    font-family: poppins-medium;
+    src:url("fuentes/Poppins-Medium.ttf");
+}
+
+@font-face{
+    font-family: valorant;
+    src: url("fuentes/Valorant\ Font.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 191, 243);
+}
+.fondo_hero {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    display: flex;
+}
+
+.fondo_hero img {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 191, 243);
+}
+
+.personage{
+    width: 85%;
+    height: 71%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.personage img{
+    float: right;
+    width: 52%;
+    height: auto;
+    margin-top: 10%;
+}
+
+.hero {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1;
+    gap: 18%;
+    width: 100%;
+    height: 20%;
+    overflow: visible;
+}
+
+.titulo {
+    margin-top: 2%;
+    padding-left: 1.5%;
+}
+
+#titulo_gamer {
+    font-family: valorant;
+    color: rgb(255, 255, 255);
+    font-size: 4.5vw;
+}
+
+.secciones {
+    z-index: 3;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    color: white;
+    gap: 4vw;
+    font-family: poppins-medium;
+    font-size: 1.5vw;
+    margin-top: 3%;
+    margin-left: 11%;
+    height: 30px;
+}
+
+.secciones a {
+    text-decoration: none;
+    color: white;
+}
+
+.websyte a {
+    text-transform: capitalize;
+}
+
+.websyte span {
+    color: gray;
+}
+
+.logo {
+    padding-top: 1.5vw;
+    margin-left: -1%;
+}
+
+#logo {
+    width: 85%;
+    margin-left: -26%;
+}
+
+.redes_sociales {
+    z-index: 2;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-flow:column;
+    gap: 2vw;
+    top: 18vw;
+    left: 2.5%;
+    justify-content: space-around;
+    width: 3%;
+    height: 3%;
+}
+
+#scroll {
+    overflow-y:hidden;
+}
+
+.contenedor {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 55vw;
+
+    
+}
+
+/*-------------------*/
+.rallita {
+    width: 100%;
+    display: flex;
+    background: none;
+    display: block;
+    
+}
+
+.rallita img{
+    width: 100%;
+}
+/*-------------------*/
+.informacion  {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 50vw;
+}
+
+.div1, div2 {
+    width: 60%;
+    height: 10vh;
+    margin-bottom: 10px;
+}
+
+.div2 {
+    position: relative;
+    display: inline-block;
+}
+.div2 p {
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    font-size: 1.25vw;
+    color: rgb(255, 255, 255);
+    background: none;
+    font-family: poppins-medium;
+}
+
+
+@media screen and (max-width:600px) {
+    .informacion{
+        flex-direction: column;
+        margin-left: 70px;
+        position: static;
+        height: 100%;
+    }
+    .div2 {
+        padding-left:80px;
+    }
+    .div2 p {
+        margin-left:80px;
+        font-size: 2.25vw;
+    }
+}
+
+.div2 img {
+    width: 50%;
+    height: 60%;
+}
+
+@media screen and (min-width:950px) {
+    .div2 img {
+        width: 65%;
+    }
+    .div2 p {
+        font-size: 1.25vw;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .div2 img {
+        width: 80%;
+    }
+    .div2 p {
+        font-size: 1.25vw;
+    }
+}
+
+.div1{
+    margin-left: 4vw;
+    font-size: 3.5vw;
+    color: white;
+    font-family: oswald-bold;
+    margin-bottom: 5%;
+}
+
+.linea1 {
+    margin-top: 2%;
+    height: 1px;
+    background-color: rgb(48, 48, 48);
+    width: 50%;
+}
+
+.linea2 {
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    margin-left: 108%;
+    width: 10%;
+}
+
+/*-------------------*/
+
+.noticias img {
+    width: 100%;
+    height: 72vw;
+    position: absolute;
+}
+
+
+.videos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 12vw;
+}
+
+.nt {
+    text-align: center;
+    color: white;
+    font-family: oswald-bold;
+    position: relative;
+    top: 60px;
+    font-size: 2.4vw;
+}
+
+@media screen and (max-width: 600px) {
+    .nt {
+        top: 30px;
+    }
+}
+
+.video1 {
+    margin: 3vw;
+    position: relative;
+    top: 4vw;
+}
+.video1 iframe {
+    width: 100%;
+    height: 17vw;
+}
+
+.video1 p {
+    color: white;
+    font-size: 1.2vw;
+    font-family: poppins-medium;
+    padding-top: 5%;
+}
+
+.video1 img {
+    position: relative;
+    width: 20%;
+    height: 20%;
+    left: 40%;
+    bottom: 2vw;
+}
+
+.video2 {
+    margin: 3vw;
+    position: relative;
+    top: -4vw;
+}
+
+.video2 p {
+    color: white;
+    font-size: 1.2vw;
+    font-family: poppins-medium;
+    padding-top: 5%;
+}
+
+.video2 img {
+    position: relative;
+    width: 20%;
+    height: 20%;
+    left: 40%;
+    bottom: 2vw;
+}
+.video2 iframe {
+    width: 100%;
+    height: 17vw;
+}
+
+.video3 {
+    margin: 3vw;
+    position: relative;
+    top: 4vw;
+}
+
+.video3 p {
+    color: white;
+    font-size: 1.2vw;
+    font-family: poppins-medium;
+    padding-top: 5%;
+}
+
+.video3 img {
+    position: relative;
+    width: 20%;
+    height: 20%;
+    left: 40%;
+    bottom: 2vw;
+}
+
+.video3 iframe {
+    width: 100%;
+    height: 17vw;
+}
+
+/*-------------------*/
+
+.pie {
+    background-color: rgb(1, 18, 30);
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 40vw;
+    position: relative;
+    top: 28vw;
+    border: solid;
+    border-bottom-width: 2.5vw;
+    border-color: rgb(0, 191, 243);
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.elemento1 {
+    color: white;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+.elemento1 h1 {
+    font-size: 4.5vw;
+    font-family: valorant;
+}
+
+.elemento1 h2 {
+    font-size: 1.8vw;
+    font-family: poppins-medium;
+    padding-top: 12%;
+}
+
+.elemento1 p {
+    position: absolute;
+    left: 5.5%;
+    bottom: 13%;
+    font-size: 1.5vw;
+    font-family: poppins-medium;
+}
+
+@media screen and (max-width: 600px) {
+    .elemento1 p {
+        bottom: 10%;
+    }
+}
+
+.pie_logo{
+    width: 40%;
+    margin-left: 28%;
+    padding-bottom: 32%;
+}
+
+.pie_phone {
+    width: 15%;
+}
+
+/*----------------------*/
+
+.elemento2 {
+    color: white;
+    font-family: poppins-medium;
+    font-size: 1vw;
+    margin-top: 13%;
+}
+
+.pie_redes_sociales {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 4vw;
+    margin-top: 10%;
+}
+
+.pie_redes_sociales img {
+    width: 100%;
+}
+
+.twitter_pie {
+    width: 16%;
+}
+
+.facebook_pie {
+    width: 16%;
+}
+
+.instagram_pie {
+    width: 16%;
+}
